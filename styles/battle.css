@@ -79,8 +79,8 @@ body {
   width: 100%;
   display: flex;
   background: black;
-  border-radius: 10rem;
   margin: 1rem;
+  border-radius: 10rem;
 }
 .health-card__bar-text {
   line-height: 2rem;
