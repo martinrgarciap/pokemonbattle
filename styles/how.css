@@ -1,0 +1,61 @@
+.how__ul {
+  width: 100%;
+  float: left;
+  box-sizing: border-box;
+  padding: 3.5%;
+  list-style: none;
+  line-height: 10rem;
+  font-size: 1.4rem;
+  text-align: center;
+}
+.how__title {
+  width: 50%;
+  float: left;
+  margin-left: 25%;
+  box-sizing: border-box;
+}
+.how__page {
+  width: 100%;
+  height: 100vh;
+  background: #000;
+  text-align: center;
+  color: #fff;
+  z-index: 7777;
+  box-sizing: border-box;
+  position: fixed;
+  left: 0;
+  top: 0;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  opacity: 0.7;
+}
+.how__page--open {
+  display: inline-block;
+}
+.how__page--close {
+  display: none;
+}
+.how__link {
+  width: 10%;
+  text-align: right;
+  box-sizing: border-box;
+  position: fixed;
+  top: 0;
+  right: 5%;
+  z-index: 777;
+  text-decoration: none;
+  padding: 3%;
+  color: #004af9;
+}
+.how__link:hover {
+  color: #f90075;
+}
+.how__closelink {
+  width: 100%;
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  text-align: right;
+  color: #fff;
+  text-decoration: none;
+}/*# sourceMappingURL=how.css.map */

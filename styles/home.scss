@@ -1,4 +1,5 @@
 @use './partials/typography' as *;
+@use './partials/mixins' as *;
 
 html{
     scroll-behavior: smooth;
@@ -19,18 +20,35 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
+     @include tablet{
+            justify-content: space-around;
+        }
     
     &__header{
-        margin-top: 5rem;
-        width: 60%;
+        margin-top: 2rem;
+        height: 20%;
+        width: 70%;
+        @include tablet{
+            margin-top: 8rem;
+            height: 30%;
+            width: 70%;
+        }
+        @include desktop{
+            margin-top: 8rem;
+            height: 30%;
+            width: 70%;
+        }
     }
     &__game-name{
         color: red;
-        font-size: 3rem;
+        font-size: 1.5rem;
+        @include tablet{
+            font-size: 2rem;
+        }
     }
     &__copyright{
-        font-size: 2rem;
+        font-size: 1rem;
     }
 }
 
@@ -43,7 +61,11 @@ body{
     }
     &__item{
         padding: 0.5rem;
-        font-size: 2.5rem;
+        font-size: 1.5rem;
+        @include tablet{
+            padding: 0.5rem;
+            font-size: 2rem;
+        }
     }
     &__links{
         text-decoration: none;
@@ -62,8 +84,13 @@ body{
     justify-content: space-evenly;
     &__pokemon{
         width: 20%;
+        height: 12rem;
         animation-duration: 0.75s;
         animation-iteration-count: infinite;
+        @include tablet{
+            width: 20%;
+            height: 80%;
+        }
     }
 }
 

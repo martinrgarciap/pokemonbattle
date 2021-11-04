@@ -1,6 +1,7 @@
 @font-face {
   font-family: PokemonGB;
   src: url(../../assets/fonts/PokemonGb-RAeo.ttf);
+  src: url(../../assets/fonts/PokemonGb-RAeo.ttf);
 }
 html {
   scroll-behavior: smooth;
@@ -22,18 +23,43 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
+}
+@media screen and (min-width: 768px) {
+  .main-screen {
+    justify-content: space-around;
+  }
 }
 .main-screen__header {
-  margin-top: 5rem;
-  width: 60%;
+  margin-top: 2rem;
+  height: 20%;
+  width: 70%;
+}
+@media screen and (min-width: 768px) {
+  .main-screen__header {
+    margin-top: 8rem;
+    height: 30%;
+    width: 70%;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .main-screen__header {
+    margin-top: 8rem;
+    height: 30%;
+    width: 70%;
+  }
 }
 .main-screen__game-name {
   color: red;
-  font-size: 3rem;
+  font-size: 1.5rem;
+}
+@media screen and (min-width: 768px) {
+  .main-screen__game-name {
+    font-size: 2rem;
+  }
 }
 .main-screen__copyright {
-  font-size: 2rem;
+  font-size: 1rem;
 }
 
 .main-nav__list {
@@ -43,7 +69,13 @@ body {
 }
 .main-nav__item {
   padding: 0.5rem;
-  font-size: 2.5rem;
+  font-size: 1.5rem;
+}
+@media screen and (min-width: 768px) {
+  .main-nav__item {
+    padding: 0.5rem;
+    font-size: 2rem;
+  }
 }
 .main-nav__links {
   text-decoration: none;
@@ -62,10 +94,17 @@ body {
 }
 .main-images__pokemon {
   width: 20%;
+  height: 12rem;
   -webkit-animation-duration: 0.75s;
           animation-duration: 0.75s;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
+}
+@media screen and (min-width: 768px) {
+  .main-images__pokemon {
+    width: 20%;
+    height: 80%;
+  }
 }
 
 .bounce {

@@ -6,16 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Page</title>
     <link rel="stylesheet" href="./styles/home.css">
+    <link rel="stylesheet" href="./styles/how.css">
 </head>
 <body>
+    <a id = 'how__link' class ='how__link' href = "#">FAQ</a>
+    <section id = 'how__page' class = 'how__page how__page--close'>
+        <a id = 'close__link' class ='how__closelink' href = "#">X</a>
+        <h1>Here are some rules how to play this game:</h1>
+        <ul class = 'how__ul'>
+            <li>1:Don't tell anyone about this game</li>
+            <li>2:Don't forget the first rule</li>
+            <li>3:Attack your opponent</li>
+            <li>4:Person who has 0 HP loses</li>
+            <li>5:Play again!</li>
+        </ul>
+    </section>
     <main class="main-screen">
         <img src="./assets/pokemon-header.png" alt="Pokemon Header Image" class="main-screen__header">
         <h2 class="main-screen__game-name">Lake Version</h2>
         <div class="main-nav">
             <ul class="main-nav__list">
-                <!-- <li class="main-nav__item"><a href="./index.html" class="main-nav__links">Home</a></li>
-                <li class="main-nav__item"><a href="./pages/how.html" class="main-nav__links">How to Play?</a></li>
-                <li class="main-nav__item"><a href="./pages/battle.html" class="main-nav__links">Battle</a></li> -->
                 <li class="main-nav__item "><a href="./pages/battle.html" class="main-nav__links elementToFadeInAndOut">PRESS TO BATTLE</a></li>
             </ul>
         </div>    
@@ -26,5 +36,6 @@
         </div>
         <h3 class="main-screen__copyright">©2021 GAME FREAK inc.</h3>
     </main>
+    <script src = "./scripts/how.js"></script>
 </body>
 </html>
